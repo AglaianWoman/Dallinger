@@ -3,20 +3,20 @@
 import filecmp
 import mock
 import os
-import pytest
+import pexpect
 import re
 import subprocess
 import sys
 from time import sleep
 from uuid import UUID
-from click.testing import CliRunner
 try:
     import configparser
 except ModuleNotFoundError:
     from six.moves import configparser
 from smtplib import SMTPAuthenticationError
 
-import pexpect
+from click.testing import CliRunner
+import pytest
 from pytest import raises
 
 import dallinger.command_line
